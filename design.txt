@@ -1,0 +1,26 @@
+modified version of galaga to reduce the complexity of having mobile enemies that attack the player
+enemies are instead destructible asteroids and indestructible turrets
+player controls a ship
+    - ship has 5(?) health
+    - ship has light cannons
+    - ship has four missiles that are replenished with pickups
+    - cannons do not automatically destroy all asteroids
+    - missiles destroy all asteroids and (maybe) temporarily disable turrets
+asteroids fall down the screen
+    - all asteroids fall at the same rate, regardless of size
+    - asteroids come in three different sizes, corresponding to health
+        - small - 1 health
+        - medium - 3 health
+        - large - 5 health
+turrets shoot at the player
+    - turrets cannot be destroyed, only (maybe) disabled temporarily
+    - turrets are rarer than asteroids
+    - at certain time intervals the turret fires at the player's current location
+    - turrets spawn more commonly at higher levels, up to a cap
+at certain time intervals, the player gains points
+at certain point thresholds, the player regains 1 health, capped
+at larger intervals, the player is set back to full health
+at smaller intervals than the health the asteroids get faster
+every so many asteroid intervals the turrets will shoot faster
+
+high score is stored, potentially even when the game is closed
