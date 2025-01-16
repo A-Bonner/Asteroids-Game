@@ -17,6 +17,7 @@ ready2 = False
 pygame.init()
 
 window = pygame.display.set_mode()
+clock = pygame.time.Clock()
 dimensions = pygame.display.get_window_size()
 score = 0
 totalScore = 0
